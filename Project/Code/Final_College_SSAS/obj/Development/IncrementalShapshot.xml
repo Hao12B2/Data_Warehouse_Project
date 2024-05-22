@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Final_College_SSAS</Database>
+    <Server>DESKTOP-P25M6CJ</Server>
+    <ConnectionString>Data Source=DESKTOP-P25M6CJ;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>FUUDsE1KuyVeXUMU9PQPFx+9Br4=16/05/2024 9:59:20 pm16/05/2024 9:59:20 pm</TimeStamp>
+        <ID>
+          <String>College Completion DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XTAO5NxCZrIDfWkbyqzdRlKRnEU=16/05/2024 10:05:47 pm16/05/2024 10:05:47 pm</TimeStamp>
+        <ID>
+          <String>College Completion DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vdDwPxjxOMmXv8uuhGfh/i+SqGA=16/05/2024 10:17:41 pm16/05/2024 10:17:41 pm</TimeStamp>
+        <ID>
+          <String>Dim Carnegie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C7P6HVLG4YQ7m9wYfkJ5JL5qcMc=16/05/2024 10:17:41 pm16/05/2024 10:17:41 pm</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zNZG0PAFG6BCW7tdNAWS6l0duDg=16/05/2024 10:49:10 pm16/05/2024 10:17:41 pm</TimeStamp>
+        <ID>
+          <String>Fact Detail</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/fUI/y1nZ/PGDXgGJCIunCWU68I=16/05/2024 10:17:41 pm16/05/2024 10:17:41 pm</TimeStamp>
+        <ID>
+          <String>Dim State</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>J/Xhn6mBINBHReR/clDbZN/ksTE=16/05/2024 10:30:12 pm16/05/2024 10:19:29 pm</TimeStamp>
+        <ID>
+          <String>Dim Cohort</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>OIhcHEgKB5pYwkAf3A/T9Q7nFKc=16/05/2024 10:49:10 pm16/05/2024 10:17:41 pmsRzpLEfk1WuHqEP+vIIcAiaP0pc=16/05/2024 10:17:41 pm16/05/2024 10:17:41 pm</TimeStamp>
+        <ID>
+          <String>Institution Detail Cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>fcu0ynJ2gN47DlMFFUFd7RmljWs=16/05/2024 10:49:10 pm16/05/2024 10:19:29 pmlv9Da/bT5au6hvK8++XcyfagqHE=16/05/2024 10:19:29 pm16/05/2024 10:19:29 pm</TimeStamp>
+        <ID>
+          <String>Institution Graduation Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>2J3D1uKh4Vc0oqVJ9JoYQenxxv8=13/05/2024 12:37:52 pm13/05/2024 12:37:52 pm</TimeStamp>
+      <ID>
+        <String>Final_College_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-05-16T15:52:35.826667Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,829 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3e02445c-5333-4f3e-a414-862be805bca1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Institution Detail Cube</ID>
+  <Name>Institution Detail Cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5990" scrolltop="-2686" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22225" y="16531" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimState" left="20" top="8047" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimState" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactDetail" left="5420" top="4347" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4360" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000811000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactDetail" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLocation" left="20" top="3700" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLocation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCarnegie" left="6086" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3027" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d30b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCarnegie" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1121" top="5347" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_DimLocation_keyState]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="8047" />
+              <point x="1520" y="5647" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7200" top="1448" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_FactDetail_keyCarnegie]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7599" y="1947" />
+              <point x="7599" y="3147" />
+              <point x="7600" y="3147" />
+              <point x="7600" y="4347" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="4274" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2873" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_FactDetail_keyLocation]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="4673" />
+              <point x="4220" y="4673" />
+              <point x="4220" y="6847" />
+              <point x="5420" y="6847" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2686</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="18743604-78dd-4ae4-a512-132334baf369">
+      <ID>Fact Detail</ID>
+      <Name>Fact Detail</Name>
+      <DimensionID>Fact Detail</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b6a6eee-e8af-4834-8c4c-16d5a04a7b5d">
+          <AttributeID>Key Institution</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4a0634b-0bd9-4fc3-a8e7-e0a2a9392ea1">
+          <AttributeID>Key Carnegie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5630478-629f-4190-9312-caeafee7a0a1">
+          <AttributeID>Key Location</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d00a3c8b-edc3-4c07-94ed-fca71cea554e">
+          <AttributeID>Awards Per State Value</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1f03ef5-b680-4944-b4ae-8587eb477f52">
+          <AttributeID>Awards Per Value</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf85073a-ee15-4507-b5ed-dc6f0cebc18a">
+          <AttributeID>Chronname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43d1bcf3-c2cc-48f6-980f-ecf16b9d9028">
+          <AttributeID>Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d64031c2-1314-4d7a-8f82-3c927885a5e8">
+          <AttributeID>Control</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41d102b4-3647-4865-90fc-32cc7b93ae05">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b459d0ca-295e-4520-b083-f5304a9b0155">
+          <AttributeID>Ft Pct</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="999e54c1-23d8-4d04-afb4-6065eaadaaaa">
+          <AttributeID>Institution Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cd6bc21-2ab5-4374-86aa-e8e756b8d5a3">
+          <AttributeID>Key State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f44e724c-0806-42b6-9ba2-aae431f13a4e">
+          <AttributeID>Lat Y</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="778fce44-84e7-4991-8897-52739ac0d24d">
+          <AttributeID>Long X</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35a5b03b-fa46-40be-8297-c22af4d7b6f8">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ec50428c-a8c5-4358-a8fc-1cb425a501ba">
+          <AttributeID>Program Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd7db90a-0e52-4af3-ab32-7fb48e5e3b0b">
+          <AttributeID>State Abbr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="df0c27cd-6f85-4028-8434-877730a2cae7">
+          <AttributeID>Student Count</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="284d3969-f3b9-441e-a635-21920da60ed0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="1b9a56d2-be82-4fe9-b40b-ba04faac82c2">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="494e8745-00e7-4874-af12-6ec66ffbf785">
+      <ID>Dim Carnegie</ID>
+      <Name>Dim Carnegie</Name>
+      <DimensionID>Dim Carnegie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dc12b53d-7943-4c66-b4cc-1967d0f7f369">
+          <AttributeID>Key Carnegie</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4e7d70c0-6f71-41f4-aea5-53fbf4fcbdda">
+      <ID>Dim Location</ID>
+      <Name>Dim Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="97157d0d-c362-443e-9f3a-fc226caf5a53">
+          <AttributeID>Key Location</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7387129c-9286-4fa8-95c5-cd6861a0c116">
+          <AttributeID>Key State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ace70e48-2d15-4ed9-880a-11b81937ea86">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b73576fb-e1e6-4d20-99b8-4d78a270dd17">
+          <AttributeID>Key State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b05ed45e-6c82-4e45-8691-92e287705a1c">
+      <ID>Dim Location - Key State</ID>
+      <Name>Dim Location - Key State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="eea43ada-290f-4408-9362-c6b6e5704e2c">
+          <AttributeID>Key State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="b3c626dd-2fc2-4372-9916-caf3de3abeee">
+      <ID>Fact Detail</ID>
+      <Name>Fact Detail</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="84f7b594-28f4-448c-b997-28347ef9a1d4">
+          <ID>Unit ID</ID>
+          <Name>Unit ID</Name>
+          <Source dwd:design-time-name="67bf3ddb-0990-4619-a86d-305e50557a0d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0812fbb2-28e6-4b99-92c1-a336a086deff">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>unitID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a83f2ac8-432b-486b-abfc-2f19464a7913">
+          <ID>Flagship</ID>
+          <Name>Flagship</Name>
+          <Source dwd:design-time-name="6e0707ce-a94c-4f7f-b5ad-e8422b8e6bef">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b90baad2-9835-4f6f-9ced-c35eb4234d77">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>flagship</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6d6eba23-e290-49bb-873c-6f86f0dd335d">
+          <ID>Long X</ID>
+          <Name>Long X</Name>
+          <Source dwd:design-time-name="fa742184-f38f-45fd-85fd-b49ebe33ea70">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1d61e77d-f398-4075-b4e4-f5e14ae568fa">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>long_x</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5ac1dd5b-57f1-4729-bbaa-60eafc1cfaaf">
+          <ID>Lat Y</ID>
+          <Name>Lat Y</Name>
+          <Source dwd:design-time-name="83d5dd32-339e-495b-bccb-9fdc3cd17174">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf41c3ed-5932-4be0-9ad9-abfeb43d775e">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>lat_y</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f20bc46b-b2c8-48d9-baf7-1ca4ec581e6f">
+          <ID>Cohort Size</ID>
+          <Name>Cohort Size</Name>
+          <Source dwd:design-time-name="508cce3f-666f-45d5-b252-c2e663c67645">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4e252f4c-b963-4180-befe-841135dd4a0d">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>cohort_size</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8faefdaf-8a2e-498c-b86d-67973b32dc30">
+          <ID>Student Count</ID>
+          <Name>Student Count</Name>
+          <Source dwd:design-time-name="b5912a22-b298-402c-b739-8291759fcf5d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fb921911-6c51-4570-bac2-a5848b5399bd">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>student_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1cc95695-374c-4f45-b983-e41a6c6f4c4e">
+          <ID>Awards Per Value</ID>
+          <Name>Awards Per Value</Name>
+          <Source dwd:design-time-name="b5492618-597e-477a-8d6e-cb900eb9072d">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="02011318-9487-4d7f-bd12-cd7f8b6193a8">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>awards_per_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9b4e9b37-90e8-482b-9e61-c9ff0376c27a">
+          <ID>Awards Per State Value</ID>
+          <Name>Awards Per State Value</Name>
+          <Source dwd:design-time-name="d051a704-d0a8-463d-b0cf-4530709b5529">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="308ad02d-59fc-4a3d-aa8e-f805da21b4f8">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>awards_per_state_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e2e61147-9560-4a00-a06f-ecfb8f1d5cc0">
+          <ID>Awards Per Natl Value</ID>
+          <Name>Awards Per Natl Value</Name>
+          <Source dwd:design-time-name="30785f9e-2a29-45c5-bbd4-af4d89818225">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0fdc158-ed53-4037-8c91-392f7e8848c5">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>awards_per_natl_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7e0a4d36-d6e2-43e7-bb9e-02a8db3663ff">
+          <ID>Exp Award Value</ID>
+          <Name>Exp Award Value</Name>
+          <Source dwd:design-time-name="f1c89c9f-dfde-418a-89e3-ad39a01765d7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9e1cc007-8bbe-493a-b202-c6872afab2a1">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>exp_award_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f15e38a1-14c8-47ba-ab5d-d008611c18ec">
+          <ID>Exp Award State Value</ID>
+          <Name>Exp Award State Value</Name>
+          <Source dwd:design-time-name="f4cfdc16-d85c-4472-a414-7648a9f73239">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6c28abf9-08de-4e21-bcb4-951411d08e08">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>exp_award_state_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="99396925-405b-4ad6-9024-5959a0c6e5fb">
+          <ID>Exp Award Natl Value</ID>
+          <Name>Exp Award Natl Value</Name>
+          <Source dwd:design-time-name="11a59685-6a54-4eb7-8d48-d023db319ae2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18e9d72b-bd9a-47ec-b19a-8777ec62f400">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>exp_award_natl_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fe70c03e-f353-48f5-9454-2b19dc90bc16">
+          <ID>Exp Award Percentile</ID>
+          <Name>Exp Award Percentile</Name>
+          <Source dwd:design-time-name="96d2d694-44c4-4455-95e5-349c18307564">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fe283cc7-2f26-432c-875a-b1072b71125d">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>exp_award_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4efd9bee-48cd-4335-8d0d-7b790811eb70">
+          <ID>Ft Pct</ID>
+          <Name>Ft Pct</Name>
+          <Source dwd:design-time-name="4a88c119-d024-4874-911b-a87a6ffcfc46">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e23c54bc-03f7-49da-8722-5d66dd3a0d9b">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>ft_pct</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8194ebdb-6a0a-415e-92ac-ae9349633b6e">
+          <ID>Fte Value</ID>
+          <Name>Fte Value</Name>
+          <Source dwd:design-time-name="46f49357-0b0c-4e89-9e76-a6d48c389793">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2cbcc9a4-1a14-4b4e-a943-cf5e7d5a2f33">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>fte_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="717d55cf-c503-461a-9d8f-dfbc2eca6b50">
+          <ID>Fte Percentile</ID>
+          <Name>Fte Percentile</Name>
+          <Source dwd:design-time-name="a5de0e66-ed4d-403b-a415-9c02480ffa71">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2e384de4-8fcf-4231-b64c-3591d4c6be4d">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>fte_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="74e83f4f-2e0f-4379-84f7-0007b57fea98">
+          <ID>Med Sat Value</ID>
+          <Name>Med Sat Value</Name>
+          <Source dwd:design-time-name="190cacb3-4aa9-42a7-9e8b-43792e5886a9">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a76127fb-bc46-4ca8-af8d-43e157fb0e32">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>med_sat_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f11d6ac4-e57c-4561-bb54-1833cab5edf2">
+          <ID>Grad 100 Value</ID>
+          <Name>Grad 100 Value</Name>
+          <Source dwd:design-time-name="323b794e-444f-4c80-85f0-dd945ad39191">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e6c79ac8-114d-4383-840e-b45d77311d19">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>grad_100_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bafa9c1f-2547-479f-8ca7-532e6d5c224c">
+          <ID>Grad 100 Percentile</ID>
+          <Name>Grad 100 Percentile</Name>
+          <Source dwd:design-time-name="0c969f17-2a82-41eb-8829-9f6a12733864">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="919711ba-d3bb-4090-b41c-cca0601208f8">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>grad_100_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="15402126-71fd-44e6-80c2-95ba453f77df">
+          <ID>Grad 150 Value</ID>
+          <Name>Grad 150 Value</Name>
+          <Source dwd:design-time-name="9f19328d-945e-4a5d-83ad-12242fbb6b97">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0fd7859e-28d5-44af-a7fd-ad0c13047dae">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>grad_150_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a2fb1d54-2a6c-4146-aed4-c518c57567d0">
+          <ID>Grad 150 Percentile</ID>
+          <Name>Grad 150 Percentile</Name>
+          <Source dwd:design-time-name="3adfd5d3-4854-4511-a15e-0a3e1971444b">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="666098a6-d6cf-4a09-9cf2-fb02d62ad61f">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>grad_150_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c24934af-b832-4ff0-a623-13906f7d5591">
+          <ID>Pell Value</ID>
+          <Name>Pell Value</Name>
+          <Source dwd:design-time-name="2cb2f01c-6376-41f1-a38b-ff72bcf4270a">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="60b4c2fc-e1be-4053-90df-086e5724af8a">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>pell_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c230dee3-0501-4b9a-b9f3-31f6fc33ad35">
+          <ID>Pell Percentile</ID>
+          <Name>Pell Percentile</Name>
+          <Source dwd:design-time-name="d58b8b7e-5e70-4030-9aae-fc7ea2592848">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cbcf99d3-ebc0-467b-8da5-39359bad7d57">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>pell_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ef2f6700-4cad-431c-a677-53152646cd9c">
+          <ID>Retain Value</ID>
+          <Name>Retain Value</Name>
+          <Source dwd:design-time-name="dba30989-6f92-4c22-99aa-e2aacdab450a">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0425db48-9b89-463e-90ce-34a845be17b5">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>retain_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="37d62458-27d1-4d7b-a8e5-9f9dd372fb37">
+          <ID>Retain Percentile</ID>
+          <Name>Retain Percentile</Name>
+          <Source dwd:design-time-name="4c2b023a-de4b-4588-869f-9ab3f242440e">
+            <DataType>Single</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18f46ab1-9328-4138-a074-ef7a276fb3a6">
+              <TableID>dbo_FactDetail</TableID>
+              <ColumnID>retain_percentile</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="33915a98-04a7-4da6-a539-a2a0c06dd13e">
+          <ID>Fact Detail Count</ID>
+          <Name>Fact Detail Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="87e024e9-a6b7-467f-8d53-aaa28d7d5616">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8eeffdc9-6605-459b-a395-1934fcd92285">
+              <TableID>dbo_FactDetail</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1177d8f8-d458-4aba-b556-a16bd5f14073">
+          <CubeDimensionID>Fact Detail</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d40709c6-066f-4e56-b29d-511f9b90281f">
+              <AttributeID>Key Institution</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f0a51f24-a4bb-4d6f-b3f4-feec55ed15ab">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="858c47f2-bc0e-4a9a-b255-e239cbd9d5e5">
+                    <TableID>dbo_FactDetail</TableID>
+                    <ColumnID>keyInstitution</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd9ed69b-1bc6-4946-a4b5-2adae8323f5b">
+          <CubeDimensionID>Dim Carnegie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5562d294-ebae-4bb8-8e64-0a6e7695885a">
+              <AttributeID>Key Carnegie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="572acb22-5060-4ab5-b161-02b275c97846">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5168edac-9b46-4293-8b16-973c30c772cb">
+                    <TableID>dbo_FactDetail</TableID>
+                    <ColumnID>keyCarnegie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5d8a7b27-ac48-4ce3-b412-6163d6eec267">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="05ee7e7e-4ddb-43b0-86a4-3d0b1458c47a">
+              <AttributeID>Key Location</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b7338b81-fdcd-4b87-9dce-8b0a6c082918">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a3d651f1-d49b-4691-990a-cc1de2f19b08">
+                    <TableID>dbo_FactDetail</TableID>
+                    <ColumnID>keyLocation</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="6c550e62-a4d0-4bbb-982d-df58bc5d3206">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <MeasureGroupID>Dim Location</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a4998465-0203-4580-a405-1115b341ed43">
+          <CubeDimensionID>Dim Location - Key State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29487f62-c1fc-444c-be2b-b15aa8627bec">
+              <AttributeID>Key State</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Location</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Key State</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8a154c3b-c96c-4965-98a4-1c35dce05066">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dd5a32c5-06d5-4ff0-a86f-4be9a11cbb79">
+          <ID>Dim State Count</ID>
+          <Name>Dim State Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="77ce98dd-ea19-44a2-a7fd-67bef8897827">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="787f0f4b-761a-402e-927b-d175ac376b7b">
+              <TableID>dbo_DimState</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7687d9dc-2a9b-4b27-8c64-cf5652901424">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="130047a5-7607-4a22-9cf1-79f022d3c9b1">
+              <AttributeID>Key State</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="02b04f05-db5a-41e3-9525-7a09753f86ac">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce465286-4804-4f3b-a343-52fd248a8120">
+                    <TableID>dbo_DimState</TableID>
+                    <ColumnID>keyState</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="d632aa37-e0b4-4c9c-8996-ede34fb5262f">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <MeasureGroupID>Dim Location</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7f568767-bfaa-41dc-bb50-55857e144b36">
+          <CubeDimensionID>Dim Location - Key State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f759da4-13f4-4296-92b1-67176ac1958a">
+              <AttributeID>Key State</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0067bc93-1af0-4f1c-ae3c-1813d594ebba">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98f52e9f-ec5b-4e96-808c-7f6ad71448b7">
+                    <TableID>dbo_DimState</TableID>
+                    <ColumnID>keyState</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c8eaad2e-3010-4052-8340-32e8fd870181">
+      <ID>Dim Location</ID>
+      <Name>Dim Location</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="89dd0545-760c-40b2-9236-d9f78a563f49">
+          <ID>Dim Location Count</ID>
+          <Name>Dim Location Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="cdced6be-dbef-4852-adb6-f4d10d4364eb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6650c8fc-7f8c-454a-93a2-18198ac31921">
+              <TableID>dbo_DimLocation</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="928c5938-9c08-4399-bd87-33bdfb953e7f">
+          <CubeDimensionID>Dim Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="64242199-2a1e-4a4b-b57b-6d63abd3c52d">
+              <AttributeID>Key Location</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a2a62413-63a2-4a53-9322-c365cafb3ac2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5643a7a-4462-415b-87a7-91ff47cfd9cd">
+                    <TableID>dbo_DimLocation</TableID>
+                    <ColumnID>keyLocation</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="742efe2b-4868-4794-9963-75b705764e47">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a5ec1999-e186-4eb6-9474-552e9bd78c41">
+              <AttributeID>Key State</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55349e7d-1e68-4633-96f7-395c8a4edfd0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19ad4353-c27b-4951-8b41-c425157a282b">
+                    <TableID>dbo_DimLocation</TableID>
+                    <ColumnID>keyState</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="2b4b5611-432a-48f3-ad70-7b10eefd3662">
+      <ID>Dim Carnegie</ID>
+      <Name>Dim Carnegie</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0ad02c61-40c3-4bac-8865-7275376bc73f">
+          <ID>Dim Carnegie Count</ID>
+          <Name>Dim Carnegie Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="23f3fab7-919c-428d-88d8-acea2be5f8f2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="80a430d5-631b-49dd-9e63-5b8878c99f3d">
+              <TableID>dbo_DimCarnegie</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="117d5dbf-a866-4193-8657-efc7df587508">
+          <CubeDimensionID>Dim Carnegie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ebb4bfe-916c-47a8-b795-99e90b57e2f0">
+              <AttributeID>Key Carnegie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b9b2e81a-44db-4ab5-958d-82488052267d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e73b687d-0c52-4c7d-bf4b-6c06299f359e">
+                    <TableID>dbo_DimCarnegie</TableID>
+                    <ColumnID>keyCarnegie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="74561a25-82a7-4272-b6da-05ad2cced59f">
+    <DataSourceViewID>College Completion DW</DataSourceViewID>
+  </Source>
+</Cube>

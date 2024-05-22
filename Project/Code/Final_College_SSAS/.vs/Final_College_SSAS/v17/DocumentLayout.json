@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Workspace\\MS_Visual_Studio_2022_work_dir\\Final_College_SSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7B9CCB-ADE7-4E4B-82C3-9AFDCF6DAD96}|Final_College_SSAS.dwproj|D:\\Workspace\\MS_Visual_Studio_2022_work_dir\\Final_College_SSAS\\Fact Detail.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{6C7B9CCB-ADE7-4E4B-82C3-9AFDCF6DAD96}|Final_College_SSAS.dwproj|solutionrelative:Fact Detail.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 100,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fact Detail.dim [Design]",
+              "DocumentMoniker": "D:\\Workspace\\MS_Visual_Studio_2022_work_dir\\Final_College_SSAS\\Fact Detail.dim",
+              "RelativeDocumentMoniker": "Fact Detail.dim",
+              "ToolTip": "D:\\Workspace\\MS_Visual_Studio_2022_work_dir\\Final_College_SSAS\\Fact Detail.dim [Design]",
+              "RelativeToolTip": "Fact Detail.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-16T15:41:27.514Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
